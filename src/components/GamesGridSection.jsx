@@ -1,17 +1,5 @@
 import { gamesData } from '../data/gamesData';
 
-const toEmbedUrl = (url) => {
-  const watchMatch = url.match(/[?&]v=([^&]+)/);
-  if (watchMatch) {
-    return `https://www.youtube.com/embed/${watchMatch[1]}`;
-  }
-  const shortMatch = url.match(/youtu\.be\/([^?&]+)/);
-  if (shortMatch) {
-    return `https://www.youtube.com/embed/${shortMatch[1]}`;
-  }
-  return url;
-};
-
 export function GamesGridSection() {
   return (
     <section className="games-section container" aria-labelledby="games-title">
@@ -43,19 +31,18 @@ export function GamesGridSection() {
               </p>
 
               {game.embedTrailer ? (
-                <div className="trailer-embed">
-                  <iframe
-                    src={toEmbedUrl(game.trailerUrl)}
-                    title={`${game.title} trailer`}
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    allowFullScreen
-                  />
+                <div className="media-spotlight">
+                  <img src={game.thumbnail} alt="" aria-hidden="true" loading="lazy" />
+                  <div className="media-spotlight-copy">
+                    <span>Featured media</span>
+                    <a href={game.trailerUrl} target="_blank" rel="noreferrer" className="trailer-link">
+                      Open Video Search
+                    </a>
+                  </div>
                 </div>
               ) : (
                 <a href={game.trailerUrl} target="_blank" rel="noreferrer" className="trailer-link">
-                  Watch Trailer
+                  Open Video Search
                 </a>
               )}
             </div>

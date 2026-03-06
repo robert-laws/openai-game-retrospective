@@ -54,7 +54,10 @@ export function HeroSection({ reducedEffects, onToggleReducedEffects }) {
       <div className="hero-content container">
         <div className="hero-copy" data-reveal>
           <p className="hero-kicker">Press Start On The Decade</p>
-          <h1>1990s Gaming Retrospective</h1>
+          <h1>
+            <span>1990s Gaming</span>
+            <span>Retrospective</span>
+          </h1>
           <p>
             Retro pixels. Modern presentation. Play a side-scrolling tribute, browse the landmark releases,
             and relive the console wars with a cleaner, sharper visual language.
@@ -63,6 +66,16 @@ export function HeroSection({ reducedEffects, onToggleReducedEffects }) {
             <span>12 landmark games</span>
             <span>playable side-scroller</span>
             <span>pixel art showcase</span>
+          </div>
+          <div className="hero-inline-stats">
+            <div>
+              <span>Era</span>
+              <strong>1990-1999</strong>
+            </div>
+            <div>
+              <span>Focus</span>
+              <strong>Console, PC, handheld</strong>
+            </div>
           </div>
           <div className="hero-actions">
             <button type="button" className="cta-button" onClick={scrollToGame}>

@@ -1,4 +1,6 @@
 const ASSET_BASE = `${import.meta.env.BASE_URL}assets/thumbnails/`;
+const toYouTubeSearchUrl = (title) =>
+  `https://www.youtube.com/results?search_query=${encodeURIComponent(`${title} trailer gameplay`)}`;
 
 export const gamesData = [
   {
@@ -10,7 +12,7 @@ export const gamesData = [
       'Nintendo expanded 2D platforming into a massive, tightly designed map with hidden exits, precision movement, and Yoshi riding mechanics.',
     funFact: 'Its overworld route system inspired progression maps in many later platformers.',
     thumbnail: `${ASSET_BASE}super-mario-world.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=B_r9N3D5Kss',
+    trailerUrl: toYouTubeSearchUrl('Super Mario World'),
     embedTrailer: true
   },
   {
@@ -22,7 +24,7 @@ export const gamesData = [
       'A foundational action-adventure with elegant dungeon design, puzzle cadence, and the iconic dual-world structure.',
     funFact: 'Many modern Zelda staples, like the Master Sword setup, were formalized here.',
     thumbnail: `${ASSET_BASE}zelda-lttp.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=V8RkqQ8fQs4',
+    trailerUrl: toYouTubeSearchUrl('The Legend of Zelda A Link to the Past'),
     embedTrailer: true
   },
   {
@@ -34,7 +36,7 @@ export const gamesData = [
       'High-speed level flow and mascot-first style gave Sega a defining identity in the early console wars.',
     funFact: 'Green Hill Zone remains one of the most recognized opening stages in game history.',
     thumbnail: `${ASSET_BASE}sonic-hedgehog.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=ZGdQwCwA8Do',
+    trailerUrl: toYouTubeSearchUrl('Sonic the Hedgehog 1991'),
     embedTrailer: false
   },
   {
@@ -46,7 +48,7 @@ export const gamesData = [
       'Defined the one-on-one fighting template with unique characters, special moves, and competitive depth.',
     funFact: 'Arcade operators reported major revenue spikes after installing SFII cabinets.',
     thumbnail: `${ASSET_BASE}street-fighter-ii.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=Y2h5nQ4xG7o',
+    trailerUrl: toYouTubeSearchUrl('Street Fighter II'),
     embedTrailer: false
   },
   {
@@ -58,7 +60,7 @@ export const gamesData = [
       'A landmark RPG featuring visible encounters, combo tech attacks, and meaningful branching endings.',
     funFact: 'Its "Dream Team" included key creators from Dragon Quest and Final Fantasy.',
     thumbnail: `${ASSET_BASE}chrono-trigger.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=Ff8w5W4x6mM',
+    trailerUrl: toYouTubeSearchUrl('Chrono Trigger'),
     embedTrailer: false
   },
   {
@@ -70,7 +72,7 @@ export const gamesData = [
       'A cinematic RPG breakthrough that helped define the CD era with pre-rendered scenes and big narrative stakes.',
     funFact: 'Its global launch momentum made JRPGs mainstream in many Western markets.',
     thumbnail: `${ASSET_BASE}final-fantasy-vii.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=QDz9A4ByHIQ',
+    trailerUrl: toYouTubeSearchUrl('Final Fantasy VII'),
     embedTrailer: false
   },
   {
@@ -82,7 +84,7 @@ export const gamesData = [
       'Stealth-action design met cinematic presentation, voice acting, and experimental fourth-wall moments.',
     funFact: "The Psycho Mantis fight is still cited as one of gaming's boldest meta encounters.",
     thumbnail: `${ASSET_BASE}metal-gear-solid.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=MeYbHWQrM9A',
+    trailerUrl: toYouTubeSearchUrl('Metal Gear Solid 1998'),
     embedTrailer: false
   },
   {
@@ -94,7 +96,7 @@ export const gamesData = [
       'Fast first-person action, moddable content, and networked deathmatch shaped the future of shooters.',
     funFact: 'Its shareware distribution model accelerated player-to-player discovery before modern app stores.',
     thumbnail: `${ASSET_BASE}doom.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=BSsfjHCFosw',
+    trailerUrl: toYouTubeSearchUrl('Doom 1993'),
     embedTrailer: true
   },
   {
@@ -106,7 +108,7 @@ export const gamesData = [
       'Merged narrative pacing and action without traditional cutaway cutscenes, raising FPS storytelling standards.',
     funFact: 'Its modding scene produced Counter-Strike, one of the biggest multiplayer franchises ever.',
     thumbnail: `${ASSET_BASE}half-life.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=5Wavn29LMRs',
+    trailerUrl: toYouTubeSearchUrl('Half-Life 1998'),
     embedTrailer: false
   },
   {
@@ -118,7 +120,7 @@ export const gamesData = [
       'Atmospheric exploration, layered world traversal, and ability-driven map design became genre canon.',
     funFact: 'The term "Metroidvania" later captured design DNA this game helped define.',
     thumbnail: `${ASSET_BASE}super-metroid.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=nYQfWbQ3M5k',
+    trailerUrl: toYouTubeSearchUrl('Super Metroid'),
     embedTrailer: false
   },
   {
@@ -130,7 +132,7 @@ export const gamesData = [
       'Portable creature collection plus link-cable trading created one of the strongest social gameplay loops of the decade.',
     funFact: 'Version exclusives nudged real-world player collaboration long before live-service design.',
     thumbnail: `${ASSET_BASE}pokemon-red-blue.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=JuYeHPFR3f0',
+    trailerUrl: toYouTubeSearchUrl('Pokemon Red Blue'),
     embedTrailer: false
   },
   {
@@ -142,7 +144,7 @@ export const gamesData = [
       'Three asymmetric factions with tight balance set a benchmark for competitive real-time strategy.',
     funFact: 'Its Korean esports ecosystem became a blueprint for modern competitive gaming.',
     thumbnail: `${ASSET_BASE}starcraft.svg`,
-    trailerUrl: 'https://www.youtube.com/watch?v=-00uQzXyujI',
+    trailerUrl: toYouTubeSearchUrl('StarCraft 1998'),
     embedTrailer: false
   }
 ];
