@@ -25,9 +25,12 @@ export function GamesGridSection() {
       </div>
 
       <div className="games-grid">
-        {gamesData.map((game) => (
+        {gamesData.map((game, index) => (
           <article key={game.id} className="game-card" data-reveal>
-            <img src={game.thumbnail} alt={`${game.title} pixel art thumbnail`} loading="lazy" />
+            <div className="game-card-media">
+              <img src={game.thumbnail} alt={`${game.title} pixel art thumbnail`} loading="lazy" />
+              <span className="rank-badge">#{String(index + 1).padStart(2, '0')}</span>
+            </div>
             <div className="game-card-body">
               <h3>{game.title}</h3>
               <p className="meta">

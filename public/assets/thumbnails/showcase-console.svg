@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" role="img" aria-label="Living room console illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10173d"/>
+      <stop offset="100%" stop-color="#0a1028"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="560" fill="url(#bg)"/>
+  <rect x="78" y="106" width="564" height="236" rx="24" fill="#161f49" stroke="#5cf6ff" stroke-width="8"/>
+  <rect x="120" y="140" width="480" height="168" rx="14" fill="#18213d"/>
+  <circle cx="520" cy="222" r="54" fill="#ff6ea8" opacity="0.24"/>
+  <rect x="146" y="164" width="130" height="100" rx="10" fill="#243d74"/>
+  <rect x="296" y="164" width="146" height="100" rx="10" fill="#2f2153"/>
+  <path d="M482 166h82v96h-82z" fill="#23345d"/>
+  <rect x="146" y="388" width="428" height="44" rx="16" fill="#0e1430"/>
+  <rect x="210" y="448" width="92" height="40" rx="12" fill="#161d3b"/>
+  <rect x="420" y="448" width="92" height="40" rx="12" fill="#161d3b"/>
+  <rect x="248" y="432" width="228" height="24" rx="10" fill="#253667"/>
+  <rect x="162" y="458" width="188" height="14" rx="7" fill="#57f6ff"/>
+  <rect x="370" y="458" width="188" height="14" rx="7" fill="#ffd55e"/>
+  <circle cx="216" cy="426" r="28" fill="#19254c" stroke="#97ffb7" stroke-width="5"/>
+  <circle cx="505" cy="426" r="28" fill="#19254c" stroke="#ff6ea8" stroke-width="5"/>
+  <rect x="202" y="414" width="28" height="6" rx="3" fill="#97ffb7"/>
+  <rect x="213" y="403" width="6" height="28" rx="3" fill="#97ffb7"/>
+  <circle cx="494" cy="417" r="7" fill="#57f6ff"/>
+  <circle cx="516" cy="417" r="7" fill="#ffd55e"/>
+  <circle cx="494" cy="438" r="7" fill="#ff6ea8"/>
+  <circle cx="516" cy="438" r="7" fill="#97ffb7"/>
+</svg>

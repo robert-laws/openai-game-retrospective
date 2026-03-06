@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { HeroSection } from './components/HeroSection';
+import { ShowcaseSection } from './components/ShowcaseSection';
 import { RetroGameSection } from './components/RetroGameSection';
 import { GamesGridSection } from './components/GamesGridSection';
 import { TimelineSection } from './components/TimelineSection';
@@ -57,6 +58,7 @@ export default function App() {
         onToggleReducedEffects={() => setReducedEffects((current) => !current)}
       />
       <main id="main-content">
+        <ShowcaseSection />
         <RetroGameSection />
         <GamesGridSection />
         <TimelineSection />
